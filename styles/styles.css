@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  background-color: var(--color-light-gray);
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+}
+
+p {
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  /* below 3 lines are to line up with FEM for comparison */
+  /* position: absolute;
+  top: 152px;
+  left: 560px; */
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 497px;
+  padding: 16px;
+  background-color: var(--color-white);
+  border-radius: 20px;
+}
+
+.hero-image {
+  border-radius: 10px;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin: 24px 0 16px 0;
+}
+
+.info-text {
+  font-weight: 400;
+  margin: 16px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: var(--color-grayish-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
